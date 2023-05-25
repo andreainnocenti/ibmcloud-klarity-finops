@@ -1,0 +1,32 @@
+{
+  accountsV2(limit: 1) {
+    accounts {
+      nid,
+      provider,
+      providerId,
+      name,
+      displayName,
+      description,
+      metadata,
+      status,
+      providerType,
+      chargeTypeCosts {
+      	chargeType,
+        cost
+      },
+      contacts {
+       	id,
+        name,
+        email,
+      },
+      owner {
+       	id,
+        name,
+        email,
+    	}
+    },
+    count,
+    costs,
+    pages
+  }
+}

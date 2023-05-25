@@ -1,0 +1,3 @@
+mutation RemoveAccount($id: ID!) {
+  removeAccountV2(nid: $id)
+}

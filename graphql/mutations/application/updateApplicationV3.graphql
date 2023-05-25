@@ -1,0 +1,11 @@
+mutation UpdateApplication($id: ID!, $name: String, $displayName: String, $ownerId: ID!) {
+  updateApplicationV3(
+    nid: $id, 
+    input: {
+      name: $name
+      displayName: $displayName,
+      ownerId: $ownerId
+    }){
+    nid
+  }
+}

@@ -1,0 +1,9 @@
+mutation AddApplicationToAccount($name: String!, $displayName: String!, $ownerId: ID!) {
+  addApplicationV2(input: {
+    name: $name
+    displayName: $displayName,
+    ownerId: $ownerId,
+  }) {
+    id
+  }
+}

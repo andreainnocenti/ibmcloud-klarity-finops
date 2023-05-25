@@ -1,0 +1,11 @@
+mutation updateAccount($id: ID!, $accountId: ID!, $ownerId:ID, $displayName: String, $description: String) {
+  updateAccountV2(
+    nid: $id,
+    input: {
+      providerId: $accountId,
+      provider: IBMCLOUD,
+      displayName: $displayName,
+      ownerId: $ownerId,
+      description: $description
+    })
+}
