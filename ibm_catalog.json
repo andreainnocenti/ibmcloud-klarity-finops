@@ -6,11 +6,11 @@
       "product_kind": "solution",
       "version": "1.0.0",
       "tags": [
-        "network_vpc",
-        "Technology"
+        "FinOps"
       ],
       "keywords": [
-        "vpc"
+        "finops",
+        "klarity"
       ],
       "short_description": "Deployable architecture to onboard an IBM Cloud account into Klarity",
       "long_description": "Deployable architecture to onboard an IBM Cloud account into Klarity.",
@@ -46,7 +46,7 @@
               {
                 "diagram": {
                   "caption": "Terraform resources",
-                  "url": "https://github.com/andreainnocenti/ibmcloud-klarity-finops/blob/main/xdocs/graph.png",
+                  "url": "https://github.com/andreainnocenti/ibmcloud-klarity-finops/blob/main/xdocs/graph.svg",
                   "metadata": []
                 },
                 "description": "A view of the Terraform constructs used within the deployable architecture."
