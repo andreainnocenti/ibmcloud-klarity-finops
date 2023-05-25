@@ -14,7 +14,7 @@
       ],
       "short_description": "Deployable architecture to onboard an IBM Cloud account into Klarity",
       "long_description": "Deployable architecture to onboard an IBM Cloud account into Klarity.",
-      "offering_docs_url": "https://github.ibm.com/cloud-finops/ibmcloud-klarity/blob/main/README.md",
+      "offering_docs_url": "https://github.com/andreainnocenti/ibmcloud-klarity-finops/blob/main/README.md",
       "support_details": "TBD",
       "flavors": [
         {
@@ -40,13 +40,13 @@
               ]
             }
           ],
-          "release_notes_url": "https://github.ibm.com/cloud-finops/ibmcloud-klarity/blob/main/CHANGELOG.md",
+          "release_notes_url": "https://github.com/andreainnocenti/ibmcloud-klarity-finops/blob/main/CHANGELOG.md",
           "architecture": {
             "diagrams": [
               {
                 "diagram": {
                   "caption": "Terraform resources",
-                  "url": "https://github.ibm.com/cloud-finops/ibmcloud-klarity/blob/main/xdocs/graph.png",
+                  "url": "https://github.com/andreainnocenti/ibmcloud-klarity-finops/blob/main/xdocs/graph.png",
                   "metadata": []
                 },
                 "description": "A view of the Terraform constructs used within the deployable architecture."
