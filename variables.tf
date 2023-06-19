@@ -1,56 +1,34 @@
-##############################################################################
-# Input Variables
-##############################################################################
-
-#variable "myvariable" {
-#  type        = string
-#  description = "A description of my variable"
-#  default     = ""
-#}
-
-##############################################################################
-
-variable "ibmcloud_account_name" {
-  description = "IBM Cloud account name"
+variable "ibmcloud_account_description" {
+  default     = "Added with Terraform and GraphQL"
+  description = "Brief description of the IBM Cloud account to be added to MCA."
   type        = string
 }
 
 variable "ibmcloud_api_key" {
-  description = "API Key for IBM Cloud"
-  type        = string
+  description = "API key for the IBM Cloud account to be added to the MCA instance. Must have the necessary permissions to create Service IDs and API keys."
   sensitive   = true
+  type        = string
 }
 
-variable "ibmcloud_account_description" {
-  description = "Description of the account to onboard"
+variable "mca_account_owner_id" { # TODO: To be improved; should be pulled with Terraform, instead of being passed as variable
+  description = "ID corresponding to the MCA contact to be assigned to the target IBM Cloud account. Note that this ID can only be retrieved using MCA's API, since it's not available on the UI."
+  type        = string
+}
+
+variable "mca_api_key_id" {
+  description = "ID corresponding to the MCA API key to be used for accessing the target instance. Must have the Full Access role."
+  sensitive   = true
+  type        = string
+}
+
+variable "mca_api_key_secret" {
+  description = "API key corresponding to the target MCA instance to add an account to. Must have the Full Access role."
+  sensitive   = true
   type        = string
 }
 
 variable "region" {
-  description = "The region to create the resources in"
-  type        = string
   default     = "us-south"
-}
-
-variable "klarity_host_name" {
-  description = "the url to your klarity host"
-  type        = string
-  default     = "https://api.cnop-int.us.nordcloudapp.com"
-}
-
-
-variable "klarity_api_id" {
-  description = "the url to your klarity host"
-  type        = string
-}
-
-variable "klarity_api_secret" {
-  description = "the url to your klarity host"
-  type        = string
-  sensitive   = true
-}
-
-variable "klarity_account_ownerId" {
-  description = "the url to your klarity host"
+  description = "Region to use with the IBM Cloud Terraform provider."
   type        = string
 }

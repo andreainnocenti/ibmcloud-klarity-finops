@@ -1,14 +1,22 @@
-mutation AddAccount($accountId: ID, $ownerId:ID!, $creds: String, $displayName: String!, $description: String) {
-  addAccountV2(input: {
-    providerId: $accountId,
-		provider: IBMCLOUD,
-    providerType: CLOUD,
-    displayName: $displayName,
-		name: $displayName,
-  	ownerId: $ownerId,
-    description: $description,
-		creds: $creds 
-  }) {
-    id
+mutation AddAccount(
+  $accountDescription: String!
+  $accountDisplayName: String!
+  $accountId: ID!
+  $accountOwnerId: ID!
+  $creds: String
+) {
+  addAccountV2(
+    input: {
+      creds: $creds
+      description: $accountDescription
+      displayName: $accountDisplayName
+      name: $accountDisplayName
+      ownerId: $accountOwnerId
+      provider: IBMCLOUD
+      providerId: $accountId
+      providerType: CLOUD
+    }
+  ) {
+    id # To be used by update and delete queries
   }
 }

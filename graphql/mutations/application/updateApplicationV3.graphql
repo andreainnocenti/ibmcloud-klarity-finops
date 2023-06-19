@@ -1,11 +1,18 @@
-mutation UpdateApplication($id: ID!, $name: String, $displayName: String, $ownerId: ID!) {
+mutation UpdateApplication(
+  $accountOwnerId: ID!
+  $applicationDescription: String
+  $applicationDisplayName: String!
+  $id: ID!
+) {
   updateApplicationV3(
-    nid: $id, 
+    nid: $id # nid refers to the NordcloudID used in MCA
     input: {
-      name: $name
-      displayName: $displayName,
-      ownerId: $ownerId
-    }){
+      description: $applicationDescription
+      displayName: $applicationDisplayName
+      name: $applicationDisplayName
+      ownerId: $accountOwnerId
+    }
+  ) {
     nid
   }
 }

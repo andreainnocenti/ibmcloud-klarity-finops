@@ -1,10 +1,6 @@
 terraform {
   required_version = ">= 1.0.0"
   required_providers {
-    external = {
-      source  = "hashicorp/external"
-      version = "2.3.1"
-    }
     graphql = {
       source  = "sullivtr/graphql"
       version = "2.5.4"
@@ -22,7 +18,7 @@ provider "ibm" {
 }
 
 provider "graphql" {
-  url = "${local.mca_graphql_server_url}/graphql"
+  url = "${var.mca_graphql_server_url}/graphql"
   headers = {
     "x-api-key"    = "${var.mca_api_key_id}/${var.mca_api_key_secret}"
     "content-type" = "application/json"

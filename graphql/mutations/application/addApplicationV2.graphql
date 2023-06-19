@@ -1,9 +1,16 @@
-mutation AddApplicationToAccount($name: String!, $displayName: String!, $ownerId: ID!) {
-  addApplicationV2(input: {
-    name: $name
-    displayName: $displayName,
-    ownerId: $ownerId,
-  }) {
+mutation AddApplicationToAccount(
+  $applicationDisplayName: String!
+  $applicationOwnerId: ID!
+  $applicationDescription: String!
+) {
+  addApplicationV2(
+    input: {
+      displayName: $applicationDisplayName
+      name: $applicationDisplayName
+      ownerId: $applicationOwnerId
+      description: $applicationDescription
+    }
+  ) {
     id
   }
 }

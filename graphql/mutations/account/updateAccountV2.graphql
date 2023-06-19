@@ -1,11 +1,20 @@
-mutation updateAccount($id: ID!, $accountId: ID!, $ownerId:ID, $displayName: String, $description: String) {
+# graphql_mutation.add_account_v2.compute_mutation_keys are used in this query as variables
+mutation updateAccount(
+  $accountDescription: String!
+  $accountDisplayName: String!
+  $accountId: ID!
+  $accountOwnerId: ID
+  $id: ID! # Output of addAccountV2 mutation
+) {
   updateAccountV2(
-    nid: $id,
+    nid: $id # nid refers to the NordcloudID used in MCA
     input: {
-      providerId: $accountId,
-      provider: IBMCLOUD,
-      displayName: $displayName,
-      ownerId: $ownerId,
-      description: $description
-    })
+      description: $accountDescription
+      displayName: $accountDisplayName
+      name: $accountDisplayName
+      ownerId: $accountOwnerId
+      provider: IBMCLOUD
+      providerId: $accountId
+    }
+  )
 }

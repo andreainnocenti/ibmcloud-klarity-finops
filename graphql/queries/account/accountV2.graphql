@@ -1,11 +1,11 @@
 query queryAccountById($id: String!) {
-	accountV2(id: $id) {
-    nid,
-    displayName,
-    description,
-    name,
+  accountV2(id: $id) {
+    nid # nid refers to the NordcloudID used in MCA
+    displayName
+    description
+    name
     owner {
-      id,
-    },
+      id
+    }
   }
 }

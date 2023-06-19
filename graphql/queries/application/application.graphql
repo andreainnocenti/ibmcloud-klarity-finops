@@ -1,11 +1,11 @@
 query queryApplicationById($id: String!) {
-	application(id: $id) {
-    nid,
-    name,
-    displayName,
-    description,
+  application(id: $id) {
+    nid # nid refers to the NordcloudID used in MCA
+    name
+    displayName
+    description
     owner {
-      id,
-    },
+      id
+    }
   }
 }

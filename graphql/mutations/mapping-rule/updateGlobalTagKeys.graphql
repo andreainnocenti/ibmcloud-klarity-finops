@@ -1,0 +1,11 @@
+mutation UpdateGlobalTagKeys(
+  $applicationTagKeys: [String]
+  $environmentTagKeys: [String]
+) {
+  updateGlobalTagKeys(
+    input: {
+      application: $applicationTagKeys
+      environment: $environmentTagKeys
+    }
+  )
+}

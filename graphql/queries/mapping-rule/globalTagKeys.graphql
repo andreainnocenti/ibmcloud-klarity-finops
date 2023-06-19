@@ -1,0 +1,6 @@
+{
+  globalTagKeys {
+    application
+    environment
+  }
+}
