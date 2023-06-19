@@ -10,7 +10,7 @@
                 "diagram": {
                   "caption": "Terraform resources",
                   "metadata": [],
-                  "url": "https://github.ibm.com/cloud-finops/mca-ibmcloud-account/blob/main/xdocs/graph.png"
+                  "url": "https://github.com/andreainnocenti/mca-add-ibmcloud-account-finops/blob/main/xdocs/graph.png"
                 }
               }
             ]
@@ -37,7 +37,7 @@
           "label": "Standard",
           "name": "mca-add-ibmcloud-account-finops",
           "outputs": [],
-          "release_notes_url": "https://github.ibm.com/cloud-finops/mca-ibmcloud-account/blob/main/CHANGELOG.md"
+          "release_notes_url": "https://github.com/andreainnocenti/mca-add-ibmcloud-account-finops/blob/main/CHANGELOG.md"
         }
       ],
       "keywords": [
@@ -46,7 +46,7 @@
       "label": "Deployable architecture to onboard an IBM Cloud account into IBM Multi-Cloud Accelerator (MCA)",
       "long_description": "Deployable architecture to onboard an IBM Cloud account into IBM Multi-Cloud Accelerator (MCA)",
       "name": "mca-add-ibmcloud-account-finops",
-      "offering_docs_url": "https://github.ibm.com/cloud-finops/mca-ibmcloud-account/blob/main/README.md",
+      "offering_docs_url": "https://github.com/andreainnocenti/mca-add-ibmcloud-account-finops/blob/main/README.md",
       "product_kind": "solution",
       "short_description": "Deployable architecture to onboard an IBM Cloud account into IBM Multi-Cloud Accelerator (MCA)",
       "support_details": "TBD",
