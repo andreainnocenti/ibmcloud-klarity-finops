@@ -1,60 +1,60 @@
 {
   "products": [
     {
+      "name": "mca-add-ibmcloud-account-finops",
+      "label": "Deployable architecture to onboard an IBM Cloud account into IBM Multi-Cloud Accelerator (MCA)",
+      "product_kind": "solution",
+      "version": "1.1.0",
+      "tags": [
+        "FinOps"
+      ],
+      "keywords": [
+        "finops",
+        "mca"
+      ],
+      "short_description": "Deployable architecture to onboard an IBM Cloud account into IBM Multi-Cloud Accelerator (MCA)",
+      "long_description": "Deployable architecture to onboard an IBM Cloud account into IBM Multi-Cloud Accelerator (MCA).",
+      "offering_docs_url": "https://github.com/andreainnocenti/mca-add-ibmcloud-account-finops/blob/main/README.md",
+      "support_details": "TBD",
       "flavors": [
         {
-          "architecture": {
-            "diagrams": [
-              {
-                "description": "A view of the Terraform constructs used within the deployable architecture.",
-                "diagram": {
-                  "caption": "Terraform resources",
-                  "metadata": [],
-                  "url": "https://github.com/andreainnocenti/mca-add-ibmcloud-account-finops/blob/main/xdocs/graph.png"
-                }
-              }
-            ]
-          },
-          "compliance": {
-            "authority": "scc-v3",
-            "controls": []
-          },
+          "label": "Standard",
+          "name": "mca-add-ibmcloud-account-finops",
+          "install_type": "fullstack",
           "configuration": [
             {
               "key": "prefix",
               "required": false
             }
           ],
+          "outputs": [ ],
+          "compliance": {
+            "authority": "scc-v3",
+            "controls": [ ]
+          },
           "iam_permissions": [
             {
+              "service_name": "iam-groups",
               "role_crns": [
                 "crn:v1:bluemix:public:iam::::role:Administrator"
-              ],
-              "service_name": "iam-groups"
+              ]
             }
           ],
-          "install_type": "fullstack",
-          "label": "Standard",
-          "name": "mca-add-ibmcloud-account-finops",
-          "outputs": [],
-          "release_notes_url": "https://github.com/andreainnocenti/mca-add-ibmcloud-account-finops/blob/main/CHANGELOG.md"
+          "release_notes_url": "https://github.com/andreainnocenti/mca-add-ibmcloud-account-finops/blob/main/CHANGELOG.md",
+          "architecture": {
+            "diagrams": [
+              {
+                "diagram": {
+                  "caption": "Terraform resources",
+                  "url": "https://github.com/andreainnocenti/mca-add-ibmcloud-account-finops/blob/main/xdocs/graph.svg",
+                  "metadata": []
+                },
+                "description": "A view of the Terraform constructs used within the deployable architecture."
+              }
+            ]
+          }
         }
-      ],
-      "keywords": [
-        "vpc"
-      ],
-      "label": "Deployable architecture to onboard an IBM Cloud account into IBM Multi-Cloud Accelerator (MCA)",
-      "long_description": "Deployable architecture to onboard an IBM Cloud account into IBM Multi-Cloud Accelerator (MCA)",
-      "name": "mca-add-ibmcloud-account-finops",
-      "offering_docs_url": "https://github.com/andreainnocenti/mca-add-ibmcloud-account-finops/blob/main/README.md",
-      "product_kind": "solution",
-      "short_description": "Deployable architecture to onboard an IBM Cloud account into IBM Multi-Cloud Accelerator (MCA)",
-      "support_details": "TBD",
-      "tags": [
-        "network_vpc",
-        "Technology"
-      ],
-      "version": "1.1.0"
+      ]
     }
   ]
 }
