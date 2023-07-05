@@ -10,8 +10,8 @@ variable "ibmcloud_api_key" {
   type        = string
 }
 
-variable "mca_account_owner_id" { # TODO: To be improved; should be pulled with Terraform, instead of being passed as variable
-  description = "ID corresponding to the MCA contact to be assigned to the target IBM Cloud account. Note that this ID can only be retrieved using MCA's API, since it's not available on the UI."
+variable "mca_account_owner_email" { 
+  description = "Email corresponding to the MCA contact to be assigned to the target IBM Cloud account."
   type        = string
 }
 

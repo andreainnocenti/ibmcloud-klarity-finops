@@ -1,6 +1,0 @@
-# graphql_mutation.add_account_v2.compute_mutation_keys are used in this query as variables
-mutation RemoveAccount(
-  $id: ID! # Output of addAccountV2 mutation
-) {
-  removeAccountV2(nid: $id) # nid refers to the NordcloudID used in MCA
-}

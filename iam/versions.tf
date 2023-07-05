@@ -17,10 +17,3 @@ provider "ibm" {
   region           = var.region
 }
 
-provider "graphql" {
-  url = "${var.mca_graphql_server_url}/graphql"
-  headers = {
-    "x-api-key"    = "${var.mca_api_key_id}/${var.mca_api_key_secret}"
-    "content-type" = "application/json"
-  }
-}

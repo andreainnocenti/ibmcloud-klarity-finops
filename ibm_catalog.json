@@ -4,7 +4,7 @@
       "name": "mca-add-ibmcloud-account-finops",
       "label": "Deployable architecture to onboard an IBM Cloud account into IBM Multi-Cloud Accelerator (MCA)",
       "product_kind": "solution",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "tags": [
         "FinOps"
       ],

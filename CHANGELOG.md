@@ -26,6 +26,14 @@ People can see what changes they might expect in upcoming releases.
 At release time, you can move the Unreleased section changes into a new release version section.
 -->
 
+## \[1.2.0\] - 2023-07-04
+
+### Changed
+
+- Changed variable `mca_account_owner_id` to `mca_account_owner_email`. ([#18](https://github.ibm.com/cloud-finops/issues/issues/18))
+- Updated `addAccount`, `updateAccount` and `deleteAccount` APIs to v3. ([#57](https://github.ibm.com/cloud-finops/issues/issues/57))
+
+
 ## \[1.1.0\] - 2023-06-15
 
 ### Added

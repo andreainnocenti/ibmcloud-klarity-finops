@@ -14,10 +14,10 @@ The creation of a new release follows the flow
 
 ## Building the Terraform diagram
 
-The [Terraform diagram in SVG](./graph-v1.1.0.svg) was created with a commands `terraform graph` and `dot -Tsvg`. Manual edits can be done to the `terraform graph` output to remove uninteresting links reduce clutter.
+The [Terraform diagram in SVG](./graph-v1.2.0.svg) was created with a commands `terraform graph` and `dot -Tsvg`. Manual edits can be done to the `terraform graph` output to remove uninteresting links reduce clutter.
 
 ```sh
 terraform graph | dot -Tsvg > ./graph-v<version>.svg
 ```
 
-![Diagram of Terraform configuration for this Deployable Architecture; version 1.1.0](./graph-v1.1.0.svg)
+![Diagram of Terraform configuration for this Deployable Architecture; version 1.2.0](./graph-v1.2.0.svg)
